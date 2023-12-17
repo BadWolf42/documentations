@@ -1,11 +1,8 @@
-## 2023-12-17 (Dev)
-- 
-
-## 2023-12-17 (v23.11.4 Beta)
-- Mise à jour de la bibliothèque requêtes de la version 2.28.2 à la version 2.31.0
+## 2023-12-17 (v23.11.4 - Beta & Dev)
+- Mise à jour de la bibliothèque `requests` de la version 2.28.2 à la version 2.31.0
 - Ajout de 3 templates pour Frigate (merci ngrataloup)
 - Déplacements du CSS dans son propre fichier
-- Correction de jMQTT::getNonBrokers() lorsqu'il n'y a pas d'équipements sur un Broker
+- Correction de `jMQTT::getNonBrokers()` lorsqu'il n'y a pas d'équipements sur un Broker
 - Correction de la vue des équipements sous forme de tableau en v4.4
 - Correction d'erreurs sur Debian 12
 - Correction orthographique (merci misterkey99)
