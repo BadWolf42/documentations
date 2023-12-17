@@ -1,7 +1,16 @@
-## 2023-12-02 (Dev)
+## 2023-12-17 (Dev)
+- 
+
+## 2023-12-17 (v23.11.4 Beta)
+- Mise à jour de la bibliothèque requêtes de la version 2.28.2 à la version 2.31.0
+- Ajout de 3 templates pour Frigate (merci ngrataloup)
+- Déplacements du CSS dans son propre fichier
+- Correction de jMQTT::getNonBrokers() lorsqu'il n'y a pas d'équipements sur un Broker
+- Correction de la vue des équipements sous forme de tableau en v4.4
+- Correction d'erreurs sur Debian 12
 - Correction orthographique (merci misterkey99)
 
-## 2023-12-01 (v23.11.3 - Stable & Beta)
+## 2023-12-01 (v23.11.3 - Stable)
 - Suppression de la doc et du changelog de la repository principale
 - Correction des derniers liens restants vers l'ancienne doc et repository
 - Correction du template Shelly Plus Plug S (merci mld.sebastien, nebz, Jeandhom et Furaxworld)
