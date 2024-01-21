@@ -290,13 +290,13 @@ blockquote {
 .cookieAcceptBar {
   display:none;
   position: fixed;
-  bottom: -50px;
+  bottom: -55px;
   left:0;
   right: 0;
   text-align: center;
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
   z-index: 99999;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -314,10 +314,10 @@ blockquote {
   background-color: #2387c0;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 10px;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
+  margin-top: 5px;
+  height: 35px;
+  line-height: 30px;
+  padding: 0 40px;
 }
 
 #div_content h1 {
