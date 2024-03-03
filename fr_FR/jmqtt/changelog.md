@@ -1,4 +1,7 @@
-## 2024-03-03 (v23.11.5 - Stable, Beta & Dev)
+## 2024-03-03 (Dev)
+- Mise à jour du template Shelly Plus Plug S (merci mld.sebastien)
+
+## 2024-03-03 (v23.11.5 - Stable & Beta)
 - Ajout d'icones : Awtrix et Pompe de relevage
 - Ajout d'un template pour Shelly Pro 3EM (merci mld.sebastien)
 - Ajout d'un template pour NotifHeure (merci loutre38)
