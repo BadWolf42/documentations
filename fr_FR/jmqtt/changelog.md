@@ -1,4 +1,12 @@
-## 2023-12-17 (v23.11.4 - Beta & Dev)
+## 2024-03-03 (v23.11.5 - Stable, Beta & Dev)
+- Ajout d'icones : Awtrix et Pompe de relevage
+- Ajout d'un template pour Shelly Pro 3EM (merci mld.sebastien)
+- Ajout d'un template pour NotifHeure (merci loutre38)
+- Ajout de 5 templates pour Teslamate (merci ngrataloup)
+- Ajout d'un template pour Shelly Plug S (merci archer44)
+- Ajout d'un template pour Ulanzi TC001 (merci Jeandhom)
+
+## 2023-12-17 (v23.11.4 - Beta)
 - Mise à jour de la bibliothèque `requests` de la version 2.28.2 à la version 2.31.0
 - Ajout de 3 templates pour Frigate (merci ngrataloup)
 - Déplacements du CSS dans son propre fichier
