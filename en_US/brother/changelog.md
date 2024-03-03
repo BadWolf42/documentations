@@ -1,4 +1,9 @@
-## 2023-11-26 (v7 Stable & Beta)
+## 2024-03-03 (v8 Beta)
+- Removed jQuery where possible
+- Added Todo to Issue Workflow
+- Improved logs (clearer and less verbose)
+
+## 2023-11-26 (v7 Stable)
 - Externalisation of documentation and changelog
 
 ## 2023-10-01 (v6)
@@ -6,7 +11,7 @@
 
 ## 2023-09-29 (v6)
 - Fixed issue with [pyasn1 package](https://community.jeedom.com/t/107671) (using a Python3 venv)
-- Fix some log levels (too verbose)
+- Fixed some log levels (too verbose)
 
 ## 2023-05-14 (v5)
 - Fixed issues with widget on Jeedom 4.4
