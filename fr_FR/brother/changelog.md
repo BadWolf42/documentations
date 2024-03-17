@@ -1,4 +1,9 @@
 ## 2024-03-17 (v8 Stable)
+> **ATTENTION** :
+> Un bug lors de l'affichage de la tab "Commandes" d'un équipement a été découver par *echo* (merci).
+> Ne sauvegarder pas un équipement, s'il y a des erreurs Javascript ou que les commandes ont disparu.
+> Une nouvelle version arrivera dans les prochains jours pour corriger, merci pour votre patience.
+
 - Passage de la dernière beta en stable
 
 ## 2024-03-03 (v8 Beta)
