@@ -1,4 +1,5 @@
-## 2024-03-03 (Dev)
+## 2024-03-17 (v23.11.6 - Stable, Beta & Dev)
+- Correction pour PHP8 en Debian 12 (merci henribi et Phpvarious)
 - Mise à jour du template Shelly Plus Plug S (merci mld.sebastien)
 
 ## 2024-03-03 (v23.11.5 - Stable & Beta)
