@@ -1,9 +1,9 @@
 ## 2024-03-17 (v8 Stable)
 > **WARNING**:
 > A bug in the "Commands" tab of an equipment was discovered thanks to *echo*.
-
+>
 > Do not save an equipment, if you have Javascript errors or the commands have disappeared.
-
+>
 > A new version will arrive in the coming days to fix it, thank you for your patience!
 
 - Last Beta is now Stable
