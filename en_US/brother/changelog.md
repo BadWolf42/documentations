@@ -1,9 +1,12 @@
+## 2024-03-17 (v8 Stable)
+- Last Beta is now Stable
+
 ## 2024-03-03 (v8 Beta)
 - Removed jQuery where possible
 - Added Todo to Issue Workflow
 - Improved logs (clearer and less verbose)
 
-## 2023-11-26 (v7 Stable)
+## 2023-11-26 (v7)
 - Externalisation of documentation and changelog
 
 ## 2023-10-01 (v6)
