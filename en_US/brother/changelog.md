@@ -1,13 +1,9 @@
-## 2024-03-17 (v8 - Stable & Beta)
-> **WARNING**:
->
-> A bug in the "Commands" tab of an equipment was discovered thanks to *echo*.
->
-> Do not save an equipment, if you have Javascript errors or the commands have disappeared.
->
-> A new version will arrive in the coming days to fix it, thank you for your patience!
+## 2024-03-18 (v9 - Stable & Beta)
+- Fixed commands not displayed on an equipment (thanks *echo*)
+- Fixed an issue when dependencies are not installed and a refresh is launched (thanks *echo*)
+- Fixed a field alignment issue on the equipment page
 
-
+## 2024-03-17 (v8)
 - Last Beta is now Stable
 
 ## 2024-03-03 (v8)
