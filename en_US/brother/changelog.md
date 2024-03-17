@@ -1,14 +1,16 @@
-## 2024-03-17 (v8 Stable)
+## 2024-03-17 (v8 - Stable & Beta)
 > **WARNING**:
+>
 > A bug in the "Commands" tab of an equipment was discovered thanks to *echo*.
 >
 > Do not save an equipment, if you have Javascript errors or the commands have disappeared.
 >
 > A new version will arrive in the coming days to fix it, thank you for your patience!
 
+
 - Last Beta is now Stable
 
-## 2024-03-03 (v8 Beta)
+## 2024-03-03 (v8)
 - Removed jQuery where possible
 - Added Todo to Issue Workflow
 - Improved logs (clearer and less verbose)
