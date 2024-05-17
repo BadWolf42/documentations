@@ -1,4 +1,10 @@
-## 2024-03-17 (v23.11.6 - Stable, Beta & Dev)
+## 2024-05-17 (v23.11.7 - Stable, Beta & Dev)
+- **Correction du script de migration entre versions de jMQTT : les migrations n'étaient pas toujours lancées**
+- Ajout d'un template pour Frigate PTZ (merci xav31190)
+- Nettoyage de certains fichiers template
+- Corrections orthographiques (merci Furaxworld)
+
+## 2024-03-17 (v23.11.6 - Stable & Beta)
 - Correction pour PHP8 en Debian 12 (merci henribi et Phpvarious)
 - Mise à jour du template Shelly Plus Plug S (merci mld.sebastien)
 
