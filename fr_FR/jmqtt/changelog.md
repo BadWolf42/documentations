@@ -1,4 +1,10 @@
-## 2024-05-17 (v23.11.7 - Stable, Beta & Dev)
+## 2024-06-08 (v23.11.8 - Stable, Beta & Dev)
+- **Support minimum avancé à la version 4.3.12 de Jeedom (au lieu de la version 4.2.11)**
+- Uniformisation du "CommunityPost" pour Jeedom en v4.3 et v4.4
+- Mise à jour de la bibliothèque `dependance.lib` (merci Nebz et Mick33)
+- Correction d'un problème avec l'API JSON (merci ovomaltin)
+
+## 2024-05-17 (v23.11.7 - Stable & Beta)
 - **Correction du script de migration entre versions de jMQTT : les migrations n'étaient pas toujours lancées**
 - Ajout d'un template pour Frigate PTZ (merci xav31190)
 - Nettoyage de certains fichiers template
