@@ -1,4 +1,12 @@
-## 2024-03-18 (v9 - Stable & Beta)
+## 2024-09-07 (v10 - Beta)
+- Added Debian 12 support
+- Rework dependancies using NebzHB/dependance.lib & Mips2648/pyenv.lib
+- Updated Python lib requests 2.31.0 -> 2.32.3
+- Updated Python lib brother 1.0.2 -> 4.3.0
+- Fix Changelog beta url
+- Fix case of status command value
+
+## 2024-03-18 (v9 - Stable)
 - Fixed commands not displayed on an equipment (thanks *echo*)
 - Fixed an issue when dependencies are not installed and a refresh is launched (thanks *echo*)
 - Fixed a field alignment issue on the equipment page

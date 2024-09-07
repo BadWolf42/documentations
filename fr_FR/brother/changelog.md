@@ -1,4 +1,12 @@
-## 2024-03-18 (v9 - Stable & Beta)
+## 2024-09-07 (v10 - Beta)
+- Ajout du support de Debian 12
+- Refonte des dépendances à l'aide de NebzHB/dependance.lib et Mips2648/pyenv.lib
+- Mise à jour des requêtes de bibliothèque Python 2.31.0 -> 2.32.3
+- Mise à jour de la bibliothèque Python brother 1.0.2 -> 4.3.0
+- Correction de l'URL du CHangelog beta
+- Correction de la casse de la valeur de la commande status
+
+## 2024-03-18 (v9 - Stable)
 - Correction d'un bug d'affichage des commandes d'un équipement (merci *echo*)
 - Correction d'un bug si les dépendances ne sont pas installée et qu'il y a un refresh (merci *echo*)
 - Correction d'un bug d'alignement des champs sur la page d'un équipement
