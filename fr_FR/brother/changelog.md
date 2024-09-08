@@ -1,4 +1,9 @@
-## 2024-09-07 (v10 - Beta)
+## 2024-09-08 (v11 - Beta)
+- Correction des remontées du démon (Modèle, S/N & Firmware manquaient, merci *sodaveli*)
+- Ajout du [workflow de traduction automatique)[https://github.com/Mips2648/plugins-translations] (merci *Mips*)
+- Ajout d'infobules sur le graphique du widget
+
+## 2024-09-07 (v10)
 - Ajout du support de Debian 12
 - Refonte des dépendances à l'aide de NebzHB/dependance.lib et Mips2648/pyenv.lib
 - Mise à jour des requêtes de bibliothèque Python 2.31.0 -> 2.32.3

@@ -1,4 +1,9 @@
-## 2024-09-07 (v10 - Beta)
+## 2024-09-08 (v11 - Beta)
+- Fixed daemon output (Model, S/N & Firmware were missing, thanks *sodaveli*)
+- Added [automatic translation workflow][https://github.com/Mips2648/plugins-translations] (thanks *Mips*)
+- Added infobubbles to chart on widget
+
+## 2024-09-07 (v10)
 - Added Debian 12 support
 - Rework dependancies using NebzHB/dependance.lib & Mips2648/pyenv.lib
 - Updated Python lib requests 2.31.0 -> 2.32.3
