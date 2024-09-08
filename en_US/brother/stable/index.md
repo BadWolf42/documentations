@@ -38,8 +38,10 @@ This plugin is opened for contributions and even encouraged! Please submit your 
 # Credits
 
 This plugin relies on the work done by:
-- [hugoKs3](https://github.com/hugoKs3) for creating this plugin in February 2022 and maintaining it since January 2023
-- [bieniu](https://github.com/bieniu) through his Python package to connect to Brother: [brother](https://github.com/bieniu/brother)
+- [hugoKs3](https://github.com/hugoKs3) who created this plugin in February 2022 and maintained it until January 2023
+- [bieniu](https://github.com/bieniu) for the Python package [brother](https://github.com/bieniu/brother)
+- [Nebz](https://github.com/NebzHB) for the package [dependance.lib](https://github.com/NebzHB/dependance.lib)
+- [Mips](https://github.com/Mips2648) for the package [pyenv.lib](https://github.com/NebzHB/dependance.lib/blob/master/pyenv.md) and the GitHub workflow [plugins-translations](https://github.com/Mips2648/plugins-translations)
 
 # Disclaimer
 

@@ -39,7 +39,9 @@ Ce plugin gratuit est ouvert à contributions (améliorations et/ou corrections)
 
 Ce plugin se repose sur le travail de :
 - [hugoKs3](https://github.com/hugoKs3) qui a créé ce plugin en février 2022 et l'a maintenu jusqu'en janvier 2023
-- [bieniu](https://github.com/bieniu) via son package Python: [brother](https://github.com/bieniu/brother)
+- [bieniu](https://github.com/bieniu) pour le package Python [brother](https://github.com/bieniu/brother)
+- [Nebz](https://github.com/NebzHB) pour le package [dependance.lib](https://github.com/NebzHB/dependance.lib)
+- [Mips](https://github.com/Mips2648) pour le package [pyenv.lib](https://github.com/NebzHB/dependance.lib/blob/master/pyenv.md) et le workflow GitHub [plugins-translations](https://github.com/Mips2648/plugins-translations)
 
 # Disclaimer
 
