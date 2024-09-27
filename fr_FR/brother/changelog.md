@@ -2,13 +2,13 @@
 - Correction d'un bug qui rechargeait les infos de l'imprimante à chaque chargement du dashboard
 - Correction d'une erreur PHP s'il manquait une commande ou sa valeur
 - Ajout de la commande "Dernier allumage"
-- Ajout d'une infobule avec plus d'informations (demande de *mich0111*)
+- Ajout d'une infobulle avec plus d'informations (demande de *mich0111*)
 - Mise à jour de la bibliothèque Python brother 4.3.0 -> 4.3.1
 
 ## 2024-09-08 (v11)
 - Correction des remontées du démon (Modèle, S/N & Firmware manquaient, merci *sodaveli*)
 - Ajout du [workflow de traduction automatique](https://github.com/Mips2648/plugins-translations) (merci *Mips*)
-- Ajout d'infobules sur le graphique du widget
+- Ajout d'infobulles sur le graphique du widget
 
 ## 2024-09-07 (v10)
 - Ajout du support de Debian 12
