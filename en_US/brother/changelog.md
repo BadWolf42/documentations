@@ -1,4 +1,11 @@
-## 2024-09-08 (v11 - Beta)
+## 2024-09-27 (v12 - Stable & Beta)
+- Fixed a bug that reloaded the printer information each time the dashboard was loaded
+- Fixed a PHP error if a command or its value was missing
+- Added new command "Last switch-on"
+- Added a tooltip with more information (request from *mich0111*)
+- Updated the Python lib brother 4.3.0 -> 4.3.1
+
+## 2024-09-08 (v11)
 - Fixed daemon output (Model, S/N & Firmware were missing, thanks *sodaveli*)
 - Added [automatic translation workflow][https://github.com/Mips2648/plugins-translations] (thanks *Mips*)
 - Added infobubbles to chart on widget
@@ -11,7 +18,7 @@
 - Fix Changelog beta url
 - Fix case of status command value
 
-## 2024-03-18 (v9 - Stable)
+## 2024-03-18 (v9)
 - Fixed commands not displayed on an equipment (thanks *echo*)
 - Fixed an issue when dependencies are not installed and a refresh is launched (thanks *echo*)
 - Fixed a field alignment issue on the equipment page
