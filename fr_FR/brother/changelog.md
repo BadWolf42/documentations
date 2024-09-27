@@ -7,7 +7,7 @@
 
 ## 2024-09-08 (v11)
 - Correction des remontées du démon (Modèle, S/N & Firmware manquaient, merci *sodaveli*)
-- Ajout du [workflow de traduction automatique)[https://github.com/Mips2648/plugins-translations] (merci *Mips*)
+- Ajout du [workflow de traduction automatique](https://github.com/Mips2648/plugins-translations) (merci *Mips*)
 - Ajout d'infobules sur le graphique du widget
 
 ## 2024-09-07 (v10)

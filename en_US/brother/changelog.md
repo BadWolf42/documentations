@@ -7,7 +7,7 @@
 
 ## 2024-09-08 (v11)
 - Fixed daemon output (Model, S/N & Firmware were missing, thanks *sodaveli*)
-- Added [automatic translation workflow][https://github.com/Mips2648/plugins-translations] (thanks *Mips*)
+- Added [automatic translation workflow](https://github.com/Mips2648/plugins-translations) (thanks *Mips*)
 - Added infobubbles to chart on widget
 
 ## 2024-09-07 (v10)
