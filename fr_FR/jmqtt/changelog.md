@@ -1,3 +1,6 @@
+## 2026-02-23 (v26.1.1 - Beta)
+- Correction d'un bug lors de la migration des commentaires des templates
+
 ## 2026-02-23 (v26.1.0 - Beta)
 - Ajout/modification des templates : Frigate_Camera_V2, Frigate_Events_V2, Shelly_1_PM, Shelly_Blu_HT, Shelly_Dimmer_12, Shelly_HT, Shelly_Pro_3EM, Shelly_Plus_HT2, Shelly_Plus_Smoke, TICMeter_Historique_Mode, TICMeter_Standard_Mode, TuYa GDC311ZBQ1 & Zigbee2mqtt_Ikea_light_without_color
 - Ajout de "Mosquitto installed by" dans les "CommunityPost"
