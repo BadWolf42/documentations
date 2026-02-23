@@ -1,4 +1,21 @@
-## 2024-06-08 (v23.11.8 - Stable, Beta & Dev)
+## 2026-02-23 (v26.1.0 - Beta)
+- Ajout/modification des templates : Frigate_Camera_V2, Frigate_Events_V2, Shelly_1_PM, Shelly_Blu_HT, Shelly_Dimmer_12, Shelly_HT, Shelly_Pro_3EM, Shelly_Plus_HT2, Shelly_Plus_Smoke, TICMeter_Historique_Mode, TICMeter_Standard_Mode, TuYa GDC311ZBQ1 & Zigbee2mqtt_Ikea_light_without_color
+- Ajout de "Mosquitto installed by" dans les "CommunityPost"
+- Utilisation de la bibliothèque `pyenv.lib` (merci Mips2648)
+- Utilisation du champ commentaire du Core pour chaque équipement, plutôt qu'un paramètre de configuration
+- Mise à jour des traductions
+- Optimisation du code et autres nettoyages
+- Inclusion de "MQTT Recorder" pour faciliter les debugs sur les messages mqtt problématiques dans le futur
+- Correction d'un bug avec Jeedom 4.5 qui multipliait les listeners (merci Spine et Phpvarious)
+- Correction de bugs logs d'évènements trop gros pour Jeedom
+- Correction du chargement automatique des classes par Jeedom (#329)
+- Correction d'erreurs de formatage dans les logs (merci rennais35000)
+- Correction d'erreurs de typage de certaines fonctions (pour PHP8)
+- Correction d'erreurs orthographique (merci Furaxworld)
+- Correction du tri alphabétique des icones (#328)
+- Suppression progressive des logs DEBUG & INFO en français (pas de traduction de l'anglais)
+
+## 2024-06-08 (v23.11.8 - Stable)
 - **Support minimum avancé à la version 4.3.12 de Jeedom (au lieu de la version 4.2.11)**
 - Uniformisation du "CommunityPost" pour Jeedom en v4.3 et v4.4
 - Mise à jour de la bibliothèque `dependance.lib` (merci Nebz et Mick33)
