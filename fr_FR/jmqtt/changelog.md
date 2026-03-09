@@ -1,4 +1,4 @@
-## 2026-02-23 (v26.1.1 - Beta)
+## 2026-02-23 (v26.1.1 - Stable & Beta)
 - Correction d'un bug lors de la migration des commentaires des templates
 
 ## 2026-02-23 (v26.1.0 - Beta)
