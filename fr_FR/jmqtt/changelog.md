@@ -1,3 +1,6 @@
+## 2026-02-23 (v26.1.2 - Stable & Beta)
+- Correction des arrêts intempestifs du daemon en cas d'indisponibilité du cache
+
 ## 2026-02-23 (v26.1.1 - Stable & Beta)
 - Correction d'un bug lors de la migration des commentaires des templates
 
