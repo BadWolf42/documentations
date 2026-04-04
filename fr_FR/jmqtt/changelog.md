@@ -1,3 +1,24 @@
+## 2026-04-04 (v26.2.0 - Beta)
+- **Support minimum avancé à la version 4.4.10 de Jeedom (au lieu de la version 4.3.12 précédemment)**
+- Ajout du [workflow de traduction automatique](https://github.com/Mips2648/plugins-translations) (merci *Mips*)
+- Ajout des traductions en espagnol et mise à jour des traductions existantes
+- Ajout d'une option de configuration pour désactiver les statistiques
+- Ajout d'une option de configuration pour afficher la modale de débugage
+- Refonte des données sur la page Santé de Jeedom
+- Amélioration de la gestion des commandes orphelines
+- Suppression des logs par Broker (tous les logs sont maintenant gérés sur la page de configuration du plugin)
+- Suppression de l'état "POK" (Partiellement OK), devient simplement NOK
+- Suppression progressive des logs en français (pas de traduction de l'anglais)
+- Suppression des contournements liés aux versions 4.2 et 4.3 du Core
+- Augmentation des informations dans les logs lors des heartbeats
+- Déplacement des options de sauvegarde et resoration de jMQTT dans la modale de débugage
+- Mise à jour de la bibliothèque `requests` de la version 2.31.0 à la version 2.33.1
+- Correction des arrêts intempestifs du daemon en cas d'indisponibilité du cache
+- Correction de la mise à jour automatique du l'état du démon dans l'interface
+- Correction de l'auto-complétion de certains champs
+- Correction liée à l'abscence du répertoire `data/backup`
+
+
 ## 2026-03-31
 - Suppression de la branche `v3` de jMQTT (non supportée depuis 2022)
 
