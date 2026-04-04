@@ -73,11 +73,6 @@ var docMenu = [
         version: ['stable', 'beta', 'dev'],
         icon: "fas fa-clipboard-list",
     }, {
-        fr_FR: "Changelog",
-        link: "/#LANG#/jmqtt/v3/changelog",
-        version: ['v3'],
-        icon: "fas fa-clipboard-list",
-    }, {
         fr_FR: "Community",
         link: "https://community.jeedom.com/tag/plugin-jmqtt\" target=\"_blank",
         icon: "fas fa-users",
