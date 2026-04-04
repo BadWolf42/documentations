@@ -64,9 +64,9 @@ Pour en savoir plus, ça se passe en anglais par ici : [MQTT Essentials](https:/
 
 Après installation, il suffit d'activer le plugin sur la page de configuration :
 
-![Configuration du plugin](images/2023-11-25_config.png)
+![Configuration du plugin](images/2026-04-04_config.png)
 
-Quelques instants sont nécessaires à l'installation des dépendances. Le suivi de la progression est possible via le log `jMQTT_dep`.
+Quelques minutes peuvent être nécessaires pour installer les dépendances. Le suivi de la progression est possible via le log `jMQTT_dep`.
 
 jMQTT est un Client MQTT pour Jeedom, il faut donc un Broker pour pouvoir d'utiliser. Par défaut, jMQTT n'installe plus automatiquement le Broker "Mosquitto" sur la machine hébergeant Jeedom pendant l'installation des dépendances. A présent jMQTT essaye de détecter si Mosquitto est installé par un autre plugin (ou non). Si vous n'avez pas encore de Broker et que jMQTT n'en voit pas un d'installé par un autre plugin, lancez l'installation de Mosquitto en cliquant sur le bouton *Installer* et attendez la fin de la procédure.
 
@@ -105,11 +105,11 @@ Ils sont souvent appelés **Broker** par abus de langage, ce sera le cas dans la
 
 Sur les équipements Broker, un point de couleur indique l'état de la connexion au Broker :
 
-![Status Broker](images/2022-10-16_broker_status.png)
+![Status Broker](images/2026-04-04_broker_status.png)
 
 * Vert : le service MQTT est joignable et la communication est opérationnelle
-* Orange : le démon n'arrive pas à se connecter au service MQTT, vérifiez les paramètres de configuration
-* Rouge : le Broker est désactivé ou le démon est inactif, vérifiez le démon et les paramètres de configuration
+* Rouge : le démon n'arrive pas à se connecter au service MQTT, vérifiez les paramètres de configuration ; ou
+* le Broker est désactivé ou le démon est inactif, vérifiez le démon et les paramètres de configuration
 
 A la suite du Broker se trouve tous les équipements rattachés à celui-ci.
 
@@ -120,12 +120,12 @@ Un équipement :
 
 Il existe également une vue sous forme de table (TableView) :
 
-![Table View](images/2023-11-25_gestion_table_view.png)
+![Table View](images/2026-04-04_gestion_table_view.png)
 
 Elle s'active en cliquant sur le bouton tout à droite du champ de recherche (dans l'encadré rouge ci-dessus).
 
 En plus de retrouver dans cette vue les informations classiques (icône, objet, nom, s'il est activé), des icônes à droite permettent de retrouver rapidement des informations importantes.
-  - Sur un Broker, on retrouvera 3 informations : son statut (OK, POK, NOK), s'il est visible et s'il est en Mode Temps Réel,
+  - Sur un Broker, on retrouvera 3 informations : son statut, s'il est visible et s'il est en Mode Temps Réel,
   - Sur un Equipement, on retrouvera 5 informations : son statut d'activation, s'il est visible, s'il est en ajout automatique de commande, son état de batterie et son état de disponibilité.
 
 Enfin tout à droite, il est possible d'accéder directement à la "Configuration avancée" de l'équipement.
@@ -143,7 +143,7 @@ Il peut aussi servir en interne Jeedom pour monitorer la connexion au Broker via
 
 ### Configuration
 
-![Configuration du Broker](images/2023-05-20_eqpt_broker.png)
+![Configuration du Broker](images/2026-04-04_eqpt_broker.png)
 
 Par défaut, un équipement Broker est créé lors de l'installation de Mosquitto par jMQTT et configuré pour s'y inscrire nativement.
 
@@ -191,10 +191,7 @@ Il est aussi possible de relancer volontairement le client MQTT avec le bouton _
   - Si vous désactivez un équipement Broker, les équipements associés ne recevront et n'enverront plus de messages.
   - En cas de déconnection intempestive au Broker MQTT, le démon tentera immédiatement une reconnexion, puis toutes les 15s.
 
-Chaque équipement Broker possède son propre fichier de log (encadré 4) suffixé par le nom de l'équipement.
-Si l'équipement est renommé, le fichier de log le sera également.
-
-Le mode Temps Réel (encadré 5) permet la visualisation en temps réel des messages qui arrivent.
+Le mode Temps Réel (encadré 4) permet la visualisation en temps réel des messages qui arrivent.
 
 
 ### Mode Temps Réel
@@ -630,25 +627,51 @@ Il faudra alors modifier la configuration du service mosquitto et ajouter (à mi
 **Il s'agit d'une opération complexe réservée à ceux qui en comprennent les implications et savent utiliser les certificats.**
 
 
+# Statistiques d'utilisation
+
+Dans le cadre de l'amélioration continue du plugin jMQTT, un mécanisme de collecte d'informations sur les installation est présent dans jMQTT.
+Cette fonctionnalité permet d’avoir de la visibilité sur les systèmes sur lesquels tournent jMQTT, notamment pour savoir si certains choix ne vont pas impacter trop d’utilisateurs.
+
+jMQTT envoie les informations suivantes de façon anonymes au concepteur du plugin : type de materiel, distribution et version du système d'exploitation, langue et version de Jeedom, version et source d'installation de jMQTT, version de Python et version de PHP.
+
+Ces informations sont envoyées lors de installation, la mise à jour, la désinstallation du plugin, sinon tous les 5 à 7 jours, et sont conservées 10 jours maximum après qu’elles aient été reçues.
+
+Il est possible de complètement désactiver cette collecte avec la case à cocher "Ne pas envoyer les statistiques du système" dans la configuration générale du plugin.
+
+
 # FAQ
 
-## Le Broker n'est pas disponible suite à l'installation du plugin
-
- Il peut arriver que l’installation du plugin se bloque. Cela se produit si le serveur est relancé pendant l’installation (voir log `jMQTT_dep`).
- Pour se débloquer, se connecter au Jeedom et supprimer le fichier `/tmp/jeedom/jMQTT/progress_dep.txt`.
-
-## J'ai changé le niveau de log mais je n'ai pas plus de détails
-
-Si vous changiez le niveau de log, le démon devait être relancé dans les anciennes versions.
-Pour cela, il fallait désactiver puis réactiver l'équipement Broker concerné.
-
-> **Note**
->
-> Aujourd'hui, le démon est automatiquement informé que le niveau de log a changé et les nouveaux logs arrivent.
-
-## Le démon se déconnecte avec le message "Erreur sur jMQTT::daemon() : The connection was lost."
+## L'équipement Broker se déconnecte avec le message "Erreur sur jMQTT::daemon() : The connection was lost."
 
 Vérifier qu’il n’y a pas 2 clients ayant le même identifiant, voir *Client-Id* dans l'[onglet Broker](#onglet-Broker) de l'équipement Broker concerné.
+
+## L'équipement Broker se déconnecte et reconnecte en permanance
+
+Si des messages de déconnection et reconnection successifs se produisent, par exemple :
+
+    INFO  Client MQTT déconnecté du Broker
+    INFO  Client MQTT connecté au Broker
+
+Vérifier qu’il n’y a pas 2 clients ayant le même identifiant, voir *Client-Id* dans l'[onglet Broker](#onglet-Broker) de l'équipement Broker concerné.
+
+
+## L'équipement Broker se déconnecte avec le message "jMqttClient.start() Exception: TimeoutError: timed out" dans le log jMQTTd
+
+Ou les messages suivants dans le log jMQTT :
+
+    INFO  [nom du Broker]: Starting MQTT client
+    INFO  [nom du Broker]: Starting MQTT client
+    INFO  [nom du Broker]: Starting MQTT client
+
+Vérifier les paramètres de configuration au Broker
+Vérifier qu’il n’y a pas 2 clients ayant le même identifiant, voir *Client-Id* dans l'[onglet Broker](#onglet-Broker) de l'équipement Broker concerné.
+
+
+## Il y a beaucoup des messages "Nothing has been sent for [...], sending a Heartbeat to the Daemon" ou "Sending a heartbeat to Jeedom, nothing sent since [...]" dans les logs
+
+C'est normal, rien de spécial à faire, ce sont des messages de débug liés à la communication entre le Démon et Jeedom.
+Ces messages permettent à Jeedom et au daemon de vérifier mutuellement « qu’ils vont bien ».
+
 
 # Problèmes inconnus
 
@@ -659,8 +682,8 @@ Les problèmes en cours d’investigations sont sur GitHub : [Issues jMQTT](http
 
 En cas de problèmes à l’installation, fournir les fichiers de log jMQTT (niveau Debug) et jMQTT\_dep.
 
-En cas de problèmes à l’utilisation, passer le plugin et les Brokers en niveau de log `Debug` reproduire le problème et fournir :
-  - Capture d'écran de la page Santé de Jeedom (avec les listes des autres plugins isntallés) et de jMQTT,
+En cas de problèmes à l’utilisation, passer le plugin en niveau de log `Debug` reproduire le problème et fournir :
+  - Capture d'écran de la page Santé de Jeedom (avec les listes des autres plugins installés) et de jMQTT,
   - Tous les fichiers de log commençant par `jMQTT`,
   - Le nom du/des Broker(s) concerné(s),
   - Le résultat de la commande suivante pour chaque Broker concerné (fichier `/tmp/diag_jmqtt.log`) :
@@ -671,6 +694,7 @@ En cas de problèmes à l’utilisation, passer le plugin et les Brokers en nive
 
 En remplaçant, si besoin, `localhost` par le nom ou l’IP de la machine hébergeant le Broker MQTT.
 Si une authentification est requise, ajouter `-u username` et `-p password` avant le `-v`.
+
 
 # Exemples d’utilisation
 
