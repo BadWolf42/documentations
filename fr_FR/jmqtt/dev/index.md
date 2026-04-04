@@ -108,8 +108,7 @@ Sur les équipements Broker, un point de couleur indique l'état de la connexion
 ![Status Broker](images/2026-04-04_broker_status.png)
 
 * Vert : le service MQTT est joignable et la communication est opérationnelle
-* Rouge : le démon n'arrive pas à se connecter au service MQTT, vérifiez les paramètres de configuration ; ou
-* le Broker est désactivé ou le démon est inactif, vérifiez le démon et les paramètres de configuration
+* Rouge : le démon n'arrive pas à se connecter au service MQTT, vérifiez les paramètres de configuration ; sinon le Broker est désactivé ou le démon est inactif, vérifiez le démon et les paramètres de configuration
 
 A la suite du Broker se trouve tous les équipements rattachés à celui-ci.
 

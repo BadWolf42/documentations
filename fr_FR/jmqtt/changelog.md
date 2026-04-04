@@ -1,6 +1,5 @@
 ## 2026-03-31
-
-- Suppression de la branche `v3` non supportée depuis 2022
+- Suppression de la branche `v3` de jMQTT (non supportée depuis 2022)
 
 ## 2026-02-23 (v26.1.2 - Stable & Beta)
 - Correction des arrêts intempestifs du daemon en cas d'indisponibilité du cache
